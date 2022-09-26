@@ -5,10 +5,12 @@ import 'package:flutter_music_app/audio_file.dart';
 import 'package:flutter_music_app/controllers/album_controller.dart';
 import 'package:flutter_music_app/controllers/auth_controllers.dart';
 import 'package:flutter_music_app/screens/music_account_screen.dart';
+import 'package:flutter_music_app/screens/music_album_screen.dart';
 import 'package:flutter_music_app/screens/music_category_screen.dart';
 import 'package:flutter_music_app/screens/music_home_icon_screen.dart';
 import 'package:flutter_music_app/screens/music_home_screen.dart';
 import 'package:flutter_music_app/screens/music_library_screen.dart';
+import 'package:flutter_music_app/screens/music_notification_screen.dart';
 import 'package:flutter_music_app/screens/music_now_playing_screen.dart';
 import 'package:flutter_music_app/screens/music_playlist_screen.dart';
 import 'package:flutter_music_app/screens/music_search_screen.dart';
@@ -57,9 +59,14 @@ AudioPlayer audioPlayer=AudioPlayer();
     MusicLibraryScreen(),
     MusicSearchScreen(),
     MusicAccountScreen(),
-    MusicHomescreen()
+    MusicHomescreen(),
+MusicSignInScreen(),
 
+    MusicSignUpScreen(),
 
+MusicNotificationScreen(),
+    MusicNowPlayingScreen(),
+   MusicPlaylistScreen()
   ];
   @override
   void initState() {
@@ -80,7 +87,7 @@ return ScreenUtilInit(builder: (context,_){
     debugShowCheckedModeBanner: false,
     title: 'Music App',
 
-    home:MusicHomescreen(),
+    home:pages[6],
     // initialRoute: RouteHelper.musicHomeIcon,
     // getPages: RouteHelper.routes
     // body:pages[4],

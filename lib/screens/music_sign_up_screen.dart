@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_utils/src/get_utils/get_utils.dart';
@@ -28,8 +29,8 @@ class _MusicSignUpScreenState extends State<MusicSignUpScreen> {
   @override
   Widget build(BuildContext context) {
 
-    double height=MediaQuery.of(context).size.height;
-    double width=MediaQuery.of(context).size.width;
+    double height=812.h;
+    double width=375.w;
     TextEditingController usernameController=TextEditingController();
     TextEditingController emailController=TextEditingController();
     TextEditingController passwordController=TextEditingController();
@@ -114,10 +115,10 @@ class _MusicSignUpScreenState extends State<MusicSignUpScreen> {
             ),
             Container(
               margin: EdgeInsets.only(
-                  top: 60,left: 42, right: 42
+                  top: 60.h,left: 42.w, right: 42.w
               ),
-              height: 100,
-              width: 400,
+              height: 100.h,
+              width: 400.w,
 
               child: Column(
                 children: [
@@ -127,19 +128,19 @@ class _MusicSignUpScreenState extends State<MusicSignUpScreen> {
                     ),
                     child: Text('Create an account',style:TextDimension.style24 ,),
                   ),
-                  SizedBox(height: 11,),
+                  SizedBox(height: 11.h,),
                   Text('it allows us to know you and serve you better',style: TextDimension.style14grey,)
                 ],
               ),
             ),
             Positioned(
-              top: 330,
+              top: 330.h,
               child: Column(
 
                 children: [
                   Container(
 
-                    height: 440,
+                    height: 440.h,
                     width: width,
                     child: Column(
                       children: [
@@ -159,7 +160,7 @@ class _MusicSignUpScreenState extends State<MusicSignUpScreen> {
 
                           },
                           child: Container(
-                              margin: EdgeInsets.only(top: 15,left: 80),
+                              margin: EdgeInsets.only(top: 15.h,left: 80.w),
                               child: Text('Create an account',style: TextDimension.style18white)),
                         ),
                           width: ContainerSize.signInWidth, height: ContainerSize.signInHeight,img: 'images/purplebtn.png', onPressed: () {
@@ -167,7 +168,7 @@ class _MusicSignUpScreenState extends State<MusicSignUpScreen> {
 
                         },),
 
-                        Container(margin: EdgeInsets.only(left: 40),
+                        Container(margin: EdgeInsets.only(left: 40.w),
                           child: Text('Sign up with google',style: TextDimension.style14black,),
                         )
                       ],

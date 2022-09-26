@@ -1,6 +1,7 @@
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import '../app_constants/linear_gradient_container.dart';
@@ -58,8 +59,8 @@ class _MusicNowPlayingScreenState extends State<MusicNowPlayingScreen> {
   }
   @override
   Widget build(BuildContext context) {
-    double height = MediaQuery.of(context).size.height;
-    double width = MediaQuery.of(context).size.width;
+    double height = 812.h;
+    double width = 375.w;
 
     return Scaffold(
      body: Container(
@@ -87,43 +88,43 @@ class _MusicNowPlayingScreenState extends State<MusicNowPlayingScreen> {
               Icon(Icons.more_vert,color: Colors.white,)
             ],
           ),
-          SizedBox(height: 40,),
+          SizedBox(height: 40.h,),
           Stack(
             children: [
               Container(
-                margin: EdgeInsets.only(left: 30,),
-                width: 240,
-              height: 287,
+                margin: EdgeInsets.only(left: 30.w,),
+                width: 240.w,
+              height: 287.h,
                 decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
+                    borderRadius: BorderRadius.circular(10.r),
                   color: Color(0xff1e1a34)
                 ),
               ),
               Container(
-                margin: EdgeInsets.only(top: 10.45,left: 20),
-                width: 260,
-                height: 287,
+                margin: EdgeInsets.only(top: 10.45.h,left: 20.w),
+                width: 260.w,
+                height: 287.h,
                 decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
+                    borderRadius: BorderRadius.circular(10.r),
                     color: Color(0xff282344)
                 ),
               ),
               Container(
-                  margin: EdgeInsets.only(top: 20,),
+                  margin: EdgeInsets.only(top: 20.h,),
                   child: LinearGradientContainer(
 
-                      width:280, height: 287.14, images: 'images/ing.png', innerHeight: 287.14, innerWidth: 280, marginRight: 20, radius: 10, innerRadius: 10, onPressed: () {  },)),
+                      width:280.w, height: 287.14.h, images: 'images/ing.png', innerHeight: 287.14.h, innerWidth: 280.w, marginRight: 20.w, radius: 10.r, innerRadius: 10.r, onPressed: () {  },)),
 
             ],
           ),
-          SizedBox(height: 70,),
+          SizedBox(height: 70.h,),
           Container(
-            margin: EdgeInsets.only(left: 10,right: 10),
+            margin: EdgeInsets.only(left: 10.w,right: 10.w),
             child: Row(
               children: [
                 Container(
-                  height: 20,
-                  width: 20,
+                  height: 20.h,
+                  width: 20.w,
                   child: Image(image: AssetImage('images/mute icon.png')),
                 ),
                 Expanded(child: Container()),
@@ -132,9 +133,9 @@ class _MusicNowPlayingScreenState extends State<MusicNowPlayingScreen> {
             ),
           ),
           Text('Indigo',style:TextDimension.style18white ,),
-          SizedBox(height: 10,),
+          SizedBox(height: 10.h,),
           Text('Chris brown - Don\'t wake me up',style:TextDimension.style12white ,),
-          SizedBox(height: 30,),
+          SizedBox(height: 30.h,),
           Slider(
             value: position.inSeconds.toDouble(),
 
@@ -153,7 +154,7 @@ class _MusicNowPlayingScreenState extends State<MusicNowPlayingScreen> {
             inactiveColor:Color(0xff2d274e) ,
           ),
           Container(
-            margin: EdgeInsets.only(left: 10,right: 10),
+            margin: EdgeInsets.only(left: 10.w,right: 10.w),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -163,21 +164,21 @@ class _MusicNowPlayingScreenState extends State<MusicNowPlayingScreen> {
               ],
             ),
           ),
-          SizedBox(height: 50,),
+          SizedBox(height: 50.h,),
           Row(children: [
             Container(
-              margin: EdgeInsets.only(left: 10,),
-              height: 20,width: 20,
+              margin: EdgeInsets.only(left: 10.w,),
+              height: 20.h,width: 20.w,
             child: Image(image: AssetImage('images/shuffle.png')),),
             Expanded(child: Container()),
             Container(
-              height: 90,
-              width: 250,
+              height: 90.h,
+              width: 250.w,
 
               child: Row(children: [
                 Container(
-                  margin: EdgeInsets.only(left: 10,),
-                  height: 50,width: 50,
+                  margin: EdgeInsets.only(left: 10.w,),
+                  height: 50.h,width: 50.h,
                   child: Image(image: AssetImage('images/previous.png')),),
                 Expanded(child: Container()),
                 GestureDetector(
@@ -185,15 +186,15 @@ class _MusicNowPlayingScreenState extends State<MusicNowPlayingScreen> {
 
                   },
                   child: Container(
-                    height:100 ,
-                    width: 100,
+                    height:100.h ,
+                    width: 100.h,
                     decoration: BoxDecoration(
                         image: DecorationImage(
                             image: AssetImage('images/pausebtn.png')
                         )
                     ),
                     child: Padding(
-                      padding: const EdgeInsets.only(bottom: 10),
+                      padding:  EdgeInsets.only(bottom: 10.h),
                       child: IconButton(onPressed: () async {
                         if(isPlaying){
                           await audioPlayer.pause();
