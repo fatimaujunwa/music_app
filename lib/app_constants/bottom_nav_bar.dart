@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_music_app/app_constants/textstyle.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 
@@ -30,9 +31,9 @@ class _BottomNavBarState extends State<BottomNavBar> {
     double width=MediaQuery.of(context).size.width;
     return Stack(
       children: [
-        Container(height: 130, ),
+        Container(height: 130.h, ),
         Container(
-          height: 75,
+          height: 75.h,
           margin: EdgeInsets.only(top: 60),
 
           child:

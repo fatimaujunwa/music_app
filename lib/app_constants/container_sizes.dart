@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 
 
@@ -6,91 +7,91 @@ class ContainerSize{
   //discover the latest...
 
 
-  static const discoverContainerWidth=262.0;
-  static const  discoverContainerHeight=244.0;
-  static const  discoverContainerMarginTop=260.0;
-  static const  discoverContainerMarginLeft=34.0;
-  static const  discoverContainerMarginRight=79.0;
-  static const  discoverContainerSizedBox=94.0;
+  static final discoverContainerWidth=262.0.w;
+  static final  discoverContainerHeight=244.0.h;
+  static final  discoverContainerMarginTop=260.0.h;
+  static final  discoverContainerMarginLeft=34.0.w;
+  static final  discoverContainerMarginRight=79.0.w;
+  static final  discoverContainerSizedBox=94.0.h;
 
   //sign in
-  static const signInWidth=312.0;
-  static const  signInHeight=85.0;
-  static const  signInMarginLeft=34.0;
-  static const  signInMarginRight=35.0;
-  static const  signInMarginBottom=154.0;
-  static const  signInSizedBox=34.0;
-  static const  signInRadius=50.0;
+  static final signInWidth=312.0.w;
+  static final  signInHeight=85.0.h;
+  static final  signInMarginLeft=34.0.w;
+  static final  signInMarginRight=35.0.w;
+  static final  signInMarginBottom=154.0.h;
+  static final  signInSizedBox=34.0.h;
+  static final  signInRadius=50.0.r;
 
   //username same for password,and email
-  static const usernameWidthCreateAccount=283.0;
-  static const  usernameHeightCreateAccount=40.0;
+  static final usernameWidthCreateAccount=283.0.w;
+  static final  usernameHeightCreateAccount=40.0.h;
 
   //not same for password and email
-  static const  usernameMarginTopCreateAccount=303.0;
+  static final  usernameMarginTopCreateAccount=303.0.h;
 
   //same for password and email
-  static const  usernameSizedBoxCreateAccount=32.0;
-  static const  usernameMarginLeftCreateAccount=46.0;
-  static const  usernameMarginRightCreateAccount=46.0;
-  static const  usernameMarginBottomCreateAccount=80.0;
+  static final  usernameSizedBoxCreateAccount=32.0;
+  static final  usernameMarginLeftCreateAccount=46.0;
+  static final  usernameMarginRightCreateAccount=46.0;
+  static final  usernameMarginBottomCreateAccount=80.0;
   //create an account on home screen
 //sign in screen container
-  static const signInScreenContainerWidth=283.0;
-  static const signInScreenContainerHeight=40.0;
-  static const signInScreenContainerMarginTop=403.0;
+  static final signInScreenContainerWidth=283.0;
+  static final signInScreenContainerHeight=40.0;
+  static final signInScreenContainerMarginTop=403.0;
 
 
   //create account home screen
-  static const createAccountHomeScreenWidth=306;
-  static const  createAccountHomeScreenHeight=60;
+  static final createAccountHomeScreenWidth=306;
+  static final  createAccountHomeScreenHeight=60;
 
   //create account same for sign in
-  static const createAccountWidth=283;
-  static const  createAccountHeight=60;
+  static final createAccountWidth=283;
+  static final  createAccountHeight=60;
 
 
   //now playing
-  static const nowPlayingHeight=287.14;
-  static const nowPlayingWidth=280;
+  static final nowPlayingHeight=287.14;
+  static final nowPlayingWidth=280;
 
   //homePageContainer
-  static const homePageContainerHeight=150;
-  static const homePageContainerWidth=150;
+  static final homePageContainerHeight=150;
+  static final homePageContainerWidth=150;
 
   //Albums container
-  static const albumContainerWidth=114.4;
-  static const albumContainerHeight=102.96;
+  static final albumContainerWidth=114.4;
+  static final albumContainerHeight=102.96;
 
   //Don't wake me up container
-  static const albumContainerDwmuWidth=364.07;
-  static const albumContainerDwmuHeight=56.81;
+  static final albumContainerDwmuWidth=364.07;
+  static final albumContainerDwmuHeight=56.81;
 
 
 //bottomNavContainer
-  static const bottomNavWidth=375;
-  static const bottomNavHeight=66.06;
+  static final bottomNavWidth=375;
+  static final bottomNavHeight=66.06;
 
 //searchTabContainer
-  static const searchTabWidth=320.28;
-  static const searchTabHeight=44.04;
+  static final searchTabWidth=320.28;
+  static final searchTabHeight=44.04;
 
   //accountContainer
-  static const accountContainerWidth=342;
-  static const accountContainerHeight=91;
+  static final accountContainerWidth=342;
+  static final accountContainerHeight=91;
 
 
   //changePasswordContainer, email,subscriptions
-  static const changePasswordContainerWidth=343;
-  static const changePasswordContainerHeight=74;
+  static final changePasswordContainerWidth=343;
+  static final changePasswordContainerHeight=74;
 
 //searchPlayList
-  static const searchPlayListWidth=253;
-  static const searchPlayListHeight=44;
+  static final searchPlayListWidth=253;
+  static final searchPlayListHeight=44;
 
 //notificationContainer
-  static const notificationContainerWidth=336;
-  static const notificationContainerHeight=50;
+  static final notificationContainerWidth=336;
+  static final notificationContainerHeight=50;
 
 
 

@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_music_app/app_constants/container_sizes.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 
@@ -18,8 +19,8 @@ class MusicHomescreen extends StatelessWidget {
     double width=MediaQuery.of(context).size.width;
     return Scaffold(
       body: Container(
-        height: height,
-        width: width,
+        height:  812.h,
+        width: 375.w,
         decoration: BoxDecoration(
           image: DecorationImage(
             image: AssetImage('images/discover.jpg'),
@@ -29,13 +30,14 @@ class MusicHomescreen extends StatelessWidget {
 
          child: Container(
 
-           height: height,
-           width: width,
+           height: 812.h,
+           width: 375.w,
            color: Colors.black.withOpacity(0.6),
            child:  Column(
 
              children: [
                Container(
+
                  height: ContainerSize.discoverContainerHeight,
                  width: ContainerSize.discoverContainerWidth,
                  margin: EdgeInsets.only(top: ContainerSize.discoverContainerMarginTop,left: ContainerSize.discoverContainerMarginLeft,right: ContainerSize.discoverContainerMarginRight,
@@ -45,7 +47,7 @@ class MusicHomescreen extends StatelessWidget {
                ),
                SizedBox(height: ContainerSize.discoverContainerSizedBox,),
                RoundedMusicContainer(text: Container(
-                   margin: EdgeInsets.only(top: 15,left: 120),
+                   margin: EdgeInsets.only(top: 15.h,left: 120.w),
                    child: Text('Sign in',style: TextDimension.style18black,)), width: ContainerSize.signInWidth, height: ContainerSize.signInHeight,img: 'images/whitebtn.png', onPressed: () {
                  Get.toNamed(RouteHelper.getSignin());
 
@@ -55,7 +57,7 @@ class MusicHomescreen extends StatelessWidget {
                ),
 
                RoundedMusicContainer(text: Container(
-                   margin: EdgeInsets.only(top: 15,left: 80),
+                   margin: EdgeInsets.only(top: 15.h,left: 80.w),
                    child: Text('Create an account',style: TextDimension.style18white)),
                  width: ContainerSize.signInWidth, height: ContainerSize.signInHeight,img: 'images/purplebtn.png', onPressed: () {
                    Get.toNamed(RouteHelper.getSignup());

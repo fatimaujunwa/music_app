@@ -36,6 +36,7 @@ dependencies:
   cupertino_icons: ^1.0.2
 
   font_awesome_flutter:
+  flutter_screenutil:
   get:
   audioplayers: ^0.20.1
 

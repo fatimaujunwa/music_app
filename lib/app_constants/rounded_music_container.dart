@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 
 import 'container_sizes.dart';
@@ -21,7 +22,7 @@ final Function() onPressed;
 height: height,
         width: width,
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(50),
+          borderRadius: BorderRadius.circular(50.r),
 
 image: DecorationImage(
             image: AssetImage(img),

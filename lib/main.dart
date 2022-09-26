@@ -10,8 +10,10 @@ import 'package:flutter_music_app/screens/music_home_icon_screen.dart';
 import 'package:flutter_music_app/screens/music_home_screen.dart';
 import 'package:flutter_music_app/screens/music_library_screen.dart';
 import 'package:flutter_music_app/screens/music_now_playing_screen.dart';
+import 'package:flutter_music_app/screens/music_playlist_screen.dart';
 import 'package:flutter_music_app/screens/music_search_screen.dart';
 import 'package:flutter_music_app/screens/music_sign_in_screen.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
@@ -73,19 +75,25 @@ AudioPlayer audioPlayer=AudioPlayer();
   @override
   Widget build(BuildContext context) {
 
+return ScreenUtilInit(builder: (context,_){
+  return GetMaterialApp(
+    debugShowCheckedModeBanner: false,
+    title: 'Music App',
 
-    return GetMaterialApp(
-      debugShowCheckedModeBanner: false,
-      home:MyApp(),
-      initialRoute: RouteHelper.musicHomeIcon,
-      getPages: RouteHelper.routes
-      // body:pages[4],
-      // extendBody: true,
-      // bottomNavigationBar: BottomNavBar()
+    home:MusicHomescreen(),
+    // initialRoute: RouteHelper.musicHomeIcon,
+    // getPages: RouteHelper.routes
+    // body:pages[4],
+    // extendBody: true,
+    // bottomNavigationBar: BottomNavBar()
 
 
 
-    );
+  );
+},
+designSize: Size(375, 812),
+);
+    
   }
 }
 
