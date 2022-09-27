@@ -72,7 +72,7 @@ class _MusicSignInScreenState extends State<MusicSignInScreen> {
             ),
             Container(
               margin: EdgeInsets.only(
-                  top: 50.h,left: 42, right: 42
+                  top: 50.h,
               ),
               height: height,width: width,
 
@@ -102,21 +102,15 @@ class _MusicSignInScreenState extends State<MusicSignInScreen> {
                             RoundTextField(Controller: passwordController,labelText: 'Password',text:'what\'s your secret key?' ,),
                             SizedBox(height: 128.h,),
 
+                            RoundedMusicContainer(text: Container(
+                                margin: EdgeInsets.only(top: 12.h,left: 120.w),
+                                child: Text('Sign in',style: TextDimension.style18white)),
+                              width: ContainerSize.signInWidth, height: ContainerSize.signInHeight,img: 'images/purplebtn.png', onPressed: () {
+                                _login();
 
-                            RoundedMusicContainer(
+                              },),
 
-                              text: GestureDetector(
-                                onTap: (){
-                                  _login();
-
-                                },
-                                child: Center(child: Text('Sign in',style: TextDimension.style18white)),
-                              ),
-                              width: 283.w, height: 60.h,img: '', onPressed: () {
-
-
-                            },),
-                            SizedBox(height: 20.h,),
+                            // SizedBox(height: 20.h,),
 
                             Container(margin: EdgeInsets.only(left: 10),
                               child: Text('forgot your password?',style: TextDimension.style14black,),

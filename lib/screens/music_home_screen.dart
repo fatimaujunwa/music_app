@@ -37,7 +37,7 @@ class MusicHomescreen extends StatelessWidget {
 
              children: [
                Container(
-
+// color: Colors.red,
                  height: ContainerSize.discoverContainerHeight,
                  width: ContainerSize.discoverContainerWidth,
                  margin: EdgeInsets.only(top: ContainerSize.discoverContainerMarginTop,left: ContainerSize.discoverContainerMarginLeft,right: ContainerSize.discoverContainerMarginRight,

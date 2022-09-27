@@ -114,7 +114,7 @@ class _MusicSignUpScreenState extends State<MusicSignUpScreen> {
               ),
             ),
             Container(
-              margin: EdgeInsets.only(top: 50.h,left: 30.w, right: 30.w),
+              margin: EdgeInsets.only(top: 50.h,),
               height: height,width: width,
               child: Column(
                 children: [
@@ -137,20 +137,13 @@ class _MusicSignUpScreenState extends State<MusicSignUpScreen> {
                       SizedBox(height: ContainerSize.usernameSizedBoxCreateAccount,),
                       RoundTextField(Controller: confirmPasswordController,labelText: 'Confirm password',text:'re-type your secret key' ,),
                       SizedBox(height: ContainerSize.usernameMarginBottomCreateAccount,),
-                      RoundedMusicContainer(
+                      RoundedMusicContainer(text: Container(
+                          margin: EdgeInsets.only(top: 15.h,left: 80.w),
+                          child: Text('Create an account',style: TextDimension.style18white)),
+                        width: ContainerSize.signInWidth, height: ContainerSize.signInHeight,img: 'images/purplebtn.png', onPressed: () {
+                         _registration();
 
-                        text: GestureDetector(
-                          onTap: (){
-                            _registration();
-
-                          },
-                          child: Center(child: Text('Create an account',style: TextDimension.style18white)),
-                        ),
-                        width: 283.w, height: 60.h,img: '', onPressed: () {
-                        _registration();
-
-                      },),
-SizedBox(height: 20.h,),
+                        },),
                       Container(margin: EdgeInsets.only(left: 40.w),
                         child: Text('Sign up with google',style: TextDimension.style14black,),
                       )

@@ -23,12 +23,12 @@ final Function() onPressed;
 height: height,
         width: width,
         decoration: BoxDecoration(
-         color:   Color(0xff2d274e),
+         // color:   Color(0xff2d274e),
           borderRadius: BorderRadius.circular(50.r),
 
 image: DecorationImage(
             image: AssetImage(img),
-fit: BoxFit.cover
+fit: BoxFit.fill
         )
         ),
         child: text,

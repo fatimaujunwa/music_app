@@ -8,7 +8,7 @@ class ContainerSize{
 
 
   static final discoverContainerWidth=262.0.w;
-  static final  discoverContainerHeight=244.0.h;
+  static final  discoverContainerHeight=285.0.h;
   static final  discoverContainerMarginTop=260.0.h;
   static final  discoverContainerMarginLeft=34.0.w;
   static final  discoverContainerMarginRight=79.0.w;

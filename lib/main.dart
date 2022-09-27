@@ -90,7 +90,7 @@ return ScreenUtilInit(builder: (context,_){
     debugShowCheckedModeBanner: false,
     title: 'Music App',
 
-    home:pages[2],
+    home:pages[10],
     // initialRoute: RouteHelper.musicHomeIcon,
     // getPages: RouteHelper.routes
     // body:pages[4],

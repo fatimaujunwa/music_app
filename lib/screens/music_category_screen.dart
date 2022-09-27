@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_music_app/app_constants/textstyle.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../app_constants/genre_container.dart';
 
@@ -101,8 +102,8 @@ class _MusicCategoryScreenState extends State<MusicCategoryScreen> with TickerPr
   }
   @override
   Widget build(BuildContext context) {
-    double height=MediaQuery.of(context).size.height;
-    double width=MediaQuery.of(context).size.width;
+    double height=812.h;
+    double width=375.w;
     return Scaffold(
       body:  Container(
         height: height,
@@ -116,16 +117,16 @@ class _MusicCategoryScreenState extends State<MusicCategoryScreen> with TickerPr
       child: ListView.builder(
           itemCount: 1,
           itemBuilder:(_,i){
-        return Container(  margin: EdgeInsets.only(top: 75,left: 20),
+        return Container(  margin: EdgeInsets.only(top: 75.h,left: 20.w),
 
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text('Tell us about your interest', style: TextDimension.style24,),
-              SizedBox(height: 10,),
+              SizedBox(height: 10.h,),
               Text('Select what your most interested in',style: TextDimension.style14grey,),
               Text('and would like to see often',style: TextDimension.style14grey,),
-              SizedBox(height: 40,),
+              SizedBox(height: 40.h,),
 SizedBox(
   height: height,
 
