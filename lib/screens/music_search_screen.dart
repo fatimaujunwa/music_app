@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import '../app_constants/textstyle.dart';
@@ -15,8 +16,8 @@ class MusicSearchScreen extends StatefulWidget {
 class _MusicSearchScreenState extends State<MusicSearchScreen> {
   @override
   Widget build(BuildContext context) {
-    double height = MediaQuery.of(context).size.height;
-    double width = MediaQuery.of(context).size.width;
+    double height = 812.h;
+    double width = 375.w;
     TextEditingController searchController=TextEditingController();
     return Scaffold(
 
@@ -46,14 +47,14 @@ child: ListView.builder(
             Stack(
                 children:[
                   Container(
-                      height: 20,
-                      width: 20,
+                      height: 20.h,
+                      width: 20.w,
                       child:
                       Image(image: AssetImage('images/notification.png'))),
                   Container(
-                    margin: EdgeInsets.only(left: 10,bottom: 8),
+                    margin: EdgeInsets.only(left: 10.w,bottom: 8.h),
                     child: CircleAvatar(backgroundColor: Color(0xff3CFF43),
-                      radius: 5,
+                      radius: 5.r,
                     ),
                   )
                 ]
@@ -62,11 +63,11 @@ child: ListView.builder(
           ],
         ),
       ),
-      SizedBox(height: 40,),
+      SizedBox(height: 40.h,),
       Container(
-        margin: EdgeInsets.only(left: 20,right: 20),
-      height: 50,
-      width: width-20,
+        margin: EdgeInsets.only(left: 20.w,right: 20.w),
+      height: 50.h,
+      width: width-20.w,
       child:
       TextField(
       controller: searchController,
@@ -91,21 +92,23 @@ child: ListView.builder(
       ),
       ),),
       ),
-      SizedBox(height: 55,),
+      SizedBox(height: 55.h,),
       Container(
-      height: 100,
-          width: 350,
+
+      height: 89.79.h,
+          width: 321.w,
           decoration: BoxDecoration(
+              // color: Colors.red,
             image: DecorationImage(
               image: AssetImage('images/button.png'),
-              fit: BoxFit.cover
+              fit: BoxFit.fill
             )
           ),
         child: Row(children: [
-          Icon(Icons.hearing,color: Color(0xff625E99),size: 70,),
-          SizedBox(width: 10,),
+          Icon(Icons.hearing,color: Color(0xff625E99),size: 50,),
+          SizedBox(width: 10.w,),
           Container(
-            margin: EdgeInsets.only(top: 30),
+            margin: EdgeInsets.only(top: 30.h),
             child: Column(children: [
               Text('What song?',style: TextDimension.style14white,),
               Text('Search the song playing around you',style: TextDimension.style14white),
@@ -113,53 +116,58 @@ child: ListView.builder(
           )
         ],),
           ),
-      SizedBox(height: 20,),
+      SizedBox(height: 20.h,),
 
       Container(
-        height: 550,
+        height: 550.h,
         width: width,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
-                margin: EdgeInsets.only(left: 10),
+                margin: EdgeInsets.only(left: 10.w),
                 child: Text('Recently searched',style: TextDimension.style14white,)),
             MediaQuery.removePadding(
                 context: context,
                 child: Container(
-                  height: 500,
+
+                  height: 500.h,
                   width: width,
                   child: ListView.builder(
-                      itemCount: 1,
+                      itemCount: 5,
                       itemBuilder: (_, i) {
                         return Column(
                           children: [
                             Container(
-                              margin: EdgeInsets.only(right: 20),
-                              height: 120,
-                              width: width,
+// padding: EdgeInsets.only(top: 10.h),
+                              // margin: EdgeInsets.only(right: 20.w),
+                              height: 120.h,
+                              width: 354,
                               decoration: BoxDecoration(
+                                // color: Colors.red,
                                 image: DecorationImage(
                                   image: AssetImage(
                                       'images/assmetric.png'),
+                                  fit: BoxFit.fill
                                 ),
                               ),
-                              child: Row(
+                              child:
+                              Row(
                                 children: [
                                   Container(
                                     margin: EdgeInsets.only(
-                                        left: 20, bottom: 18),
+                                        left: 30.w, bottom: 18.h),
                                     child: CircleAvatar(
-                                      radius: 30,
+                                      radius: 30.r,
                                       backgroundImage:
                                       AssetImage('images/tat.jpg'),
                                     ),
                                   ),
                                   SizedBox(
-                                    width: 10,
+                                    width: 10.w,
                                   ),
                                   Container(
-                                    margin: EdgeInsets.only(top: 30),
+                                    margin: EdgeInsets.only(top: 30.h),
                                     child: Column(
                                       crossAxisAlignment:
                                       CrossAxisAlignment.start,
@@ -178,58 +186,60 @@ child: ListView.builder(
                                     ),
                                   ),
                                   Container(
-                                      margin: EdgeInsets.only(bottom: 10,left: 175),
+                                      margin: EdgeInsets.only(bottom: 10.h,left: 140.w),
                                       child: Icon(Icons.more_vert,color: Colors.grey.shade700,)),
                                 ],
                               ),
                             ),
-                            Container(
-                              margin: EdgeInsets.only(left: 20),
-                              height: 120,
-                              width: width,
-                              decoration: BoxDecoration(
-                                image: DecorationImage(
-                                  image: AssetImage('images/flip.png'),
-                                ),
-                              ),
-                              child: Row(
-                                children: [
-                                  Container(
-                                      margin: EdgeInsets.only(bottom: 10),
-                                      child: Icon(Icons.more_vert,color: Colors.grey.shade700,)),
-                                  Container(
-                                    margin: EdgeInsets.only(
-                                        top: 30, left: 180),
-                                    child: Column(
-                                      crossAxisAlignment:
-                                      CrossAxisAlignment.start,
-                                      children: [
-                                        Text(
-                                          'Holy Father',
-                                          style: TextDimension
-                                              .style14white,
-                                        ),
-                                        Text(
-                                          'Mayorkun',
-                                          style:
-                                          TextDimension.style14grey,
-                                        )
-                                      ],
-                                    ),
-                                  ),
-                                  Container(
-                                    margin: EdgeInsets.only(
-                                        left: 10, bottom: 18),
-                                    child: CircleAvatar(
-                                      radius: 30,
-                                      backgroundImage:
-                                      AssetImage('images/tat.jpg'),
-                                    ),
-                                  ),
-
-                                ],
-                              ),
-                            ),
+                            SizedBox(height: 10.h,)
+                            // Container(
+                            //   margin: EdgeInsets.only(left: 20),
+                            //   height: 120,
+                            //   width: width,
+                            //   decoration: BoxDecoration(
+                            //     image: DecorationImage(
+                            //       image: AssetImage('images/flip.png'),
+                            //     ),
+                            //   ),
+                            //   child:
+                            //   Row(
+                            //     children: [
+                            //       Container(
+                            //           margin: EdgeInsets.only(bottom: 10),
+                            //           child: Icon(Icons.more_vert,color: Colors.grey.shade700,)),
+                            //       Container(
+                            //         margin: EdgeInsets.only(
+                            //             top: 30, left: 180),
+                            //         child: Column(
+                            //           crossAxisAlignment:
+                            //           CrossAxisAlignment.start,
+                            //           children: [
+                            //             Text(
+                            //               'Holy Father',
+                            //               style: TextDimension
+                            //                   .style14white,
+                            //             ),
+                            //             Text(
+                            //               'Mayorkun',
+                            //               style:
+                            //               TextDimension.style14grey,
+                            //             )
+                            //           ],
+                            //         ),
+                            //       ),
+                            //       Container(
+                            //         margin: EdgeInsets.only(
+                            //             left: 10, bottom: 18),
+                            //         child: CircleAvatar(
+                            //           radius: 30,
+                            //           backgroundImage:
+                            //           AssetImage('images/tat.jpg'),
+                            //         ),
+                            //       ),
+                            //
+                            //     ],
+                            //   ),
+                            // ),
                           ],
                         );
                       }),

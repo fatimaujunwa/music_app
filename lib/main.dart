@@ -10,6 +10,7 @@ import 'package:flutter_music_app/screens/music_category_screen.dart';
 import 'package:flutter_music_app/screens/music_home_icon_screen.dart';
 import 'package:flutter_music_app/screens/music_home_screen.dart';
 import 'package:flutter_music_app/screens/music_library_screen.dart';
+import 'package:flutter_music_app/screens/music_listening_screen.dart';
 import 'package:flutter_music_app/screens/music_notification_screen.dart';
 import 'package:flutter_music_app/screens/music_now_playing_screen.dart';
 import 'package:flutter_music_app/screens/music_playlist_screen.dart';
@@ -66,7 +67,9 @@ MusicSignInScreen(),
 
 MusicNotificationScreen(),
     MusicNowPlayingScreen(),
-   MusicPlaylistScreen()
+   MusicPlaylistScreen(),
+    MusicCategoryScreen(),
+    MusicListeningScreen()
   ];
   @override
   void initState() {
@@ -87,7 +90,7 @@ return ScreenUtilInit(builder: (context,_){
     debugShowCheckedModeBanner: false,
     title: 'Music App',
 
-    home:pages[6],
+    home:pages[2],
     // initialRoute: RouteHelper.musicHomeIcon,
     // getPages: RouteHelper.routes
     // body:pages[4],

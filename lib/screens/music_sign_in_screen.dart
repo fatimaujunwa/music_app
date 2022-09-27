@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 
@@ -22,8 +23,8 @@ class MusicSignInScreen extends StatefulWidget {
 class _MusicSignInScreenState extends State<MusicSignInScreen> {
   @override
   Widget build(BuildContext context) {
-    double height=MediaQuery.of(context).size.height;
-    double width=MediaQuery.of(context).size.width;
+    double height=812.h;
+    double width=375.w;
     TextEditingController usernameController=TextEditingController();
     TextEditingController passwordController=TextEditingController();
 
@@ -71,10 +72,9 @@ class _MusicSignInScreenState extends State<MusicSignInScreen> {
             ),
             Container(
               margin: EdgeInsets.only(
-                  top: 60,left: 42, right: 42
+                  top: 50.h,left: 42, right: 42
               ),
-              height: 100,
-              width: 400,
+              height: height,width: width,
 
               child: Column(
                 children: [
@@ -84,46 +84,54 @@ class _MusicSignInScreenState extends State<MusicSignInScreen> {
                     ),
                     child: Text('Welcome Back',style:TextDimension.style24 ,),
                   ),
-                  SizedBox(height: 11,),
-                  Text('we are pleased to see you again',style: TextDimension.style14grey,)
+                  // SizedBox(height: 11,),
+                  Text('we are pleased to see you again',style: TextDimension.style14grey,),
+                  SizedBox(height: 183.h,),
+                  Column(
+
+                    children: [
+                      Container(
+// color: Colors.red,
+                        height: 400,
+                        width: width,
+                        child: Column(
+                          children: [
+                            RoundTextField(Controller: usernameController,labelText: 'Username',text:'what should we call you' ,),
+
+                            SizedBox(height: ContainerSize.usernameSizedBoxCreateAccount,),
+                            RoundTextField(Controller: passwordController,labelText: 'Password',text:'what\'s your secret key?' ,),
+                            SizedBox(height: 128.h,),
+
+
+                            RoundedMusicContainer(
+
+                              text: GestureDetector(
+                                onTap: (){
+                                  _login();
+
+                                },
+                                child: Center(child: Text('Sign in',style: TextDimension.style18white)),
+                              ),
+                              width: 283.w, height: 60.h,img: '', onPressed: () {
+
+
+                            },),
+                            SizedBox(height: 20.h,),
+
+                            Container(margin: EdgeInsets.only(left: 10),
+                              child: Text('forgot your password?',style: TextDimension.style14black,),
+                            )
+                          ],
+                        ),
+                      ),
+
+
+                    ],
+                  )
                 ],
               ),
             ),
-            Positioned(
-              top: 330,
-              child: Column(
 
-                children: [
-                  Container(
-
-                    height: 440,
-                    width: width,
-                    child: Column(
-                      children: [
-                        RoundTextField(Controller: usernameController,labelText: 'Username',text:'what should we call you' ,),
-
-                        SizedBox(height: ContainerSize.usernameSizedBoxCreateAccount,),
-                        RoundTextField(Controller: passwordController,labelText: 'Password',text:'what\'s your secret key?' ,),
-                        SizedBox(height: 128,),
-
-
-                        RoundedMusicContainer(text: Container(
-                            margin: EdgeInsets.only(top: 15,left: 130),
-                            child: Text('Sign in',style: TextDimension.style18white)), width: ContainerSize.signInWidth, height: ContainerSize.signInHeight,img: 'images/purplebtn.png', onPressed: () {
-                          _login();
-                        },),
-
-                        Container(margin: EdgeInsets.only(left: 10),
-                          child: Text('forgot your password?',style: TextDimension.style14black,),
-                        )
-                      ],
-                    ),
-                  ),
-
-
-                ],
-              ),
-            ),
 
 
           ],

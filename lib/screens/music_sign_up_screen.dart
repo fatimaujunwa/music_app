@@ -114,12 +114,8 @@ class _MusicSignUpScreenState extends State<MusicSignUpScreen> {
               ),
             ),
             Container(
-              margin: EdgeInsets.only(
-                  top: 60.h,left: 42.w, right: 42.w
-              ),
-              height: 100.h,
-              width: 400.w,
-
+              margin: EdgeInsets.only(top: 50.h,left: 30.w, right: 30.w),
+              height: height,width: width,
               child: Column(
                 children: [
                   Container(
@@ -128,62 +124,61 @@ class _MusicSignUpScreenState extends State<MusicSignUpScreen> {
                     ),
                     child: Text('Create an account',style:TextDimension.style24 ,),
                   ),
-                  SizedBox(height: 11.h,),
-                  Text('it allows us to know you and serve you better',style: TextDimension.style14grey,)
-                ],
-              ),
-            ),
-            Positioned(
-              top: 330.h,
-              child: Column(
+                  Text('it allows us to know you and serve you better',style: TextDimension.style14grey,),
+                  SizedBox(height:183.h,),
 
-                children: [
-                  Container(
+                  Column(
+                    children: [
+                      RoundTextField(Controller: usernameController,labelText: 'Username',text:'what should we call you' ,),
+                      SizedBox(height: ContainerSize.usernameSizedBoxCreateAccount,),
+                      RoundTextField(Controller: emailController,labelText: 'Email',text:'what\'s your email address?' ,),
+                      SizedBox(height: ContainerSize.usernameSizedBoxCreateAccount,),
+                      RoundTextField(Controller: passwordController,labelText: 'Password',text:'what\'s your secret key?' ,),
+                      SizedBox(height: ContainerSize.usernameSizedBoxCreateAccount,),
+                      RoundTextField(Controller: confirmPasswordController,labelText: 'Confirm password',text:'re-type your secret key' ,),
+                      SizedBox(height: ContainerSize.usernameMarginBottomCreateAccount,),
+                      RoundedMusicContainer(
 
-                    height: 440.h,
-                    width: width,
-                    child: Column(
-                      children: [
-                        RoundTextField(Controller: usernameController,labelText: 'Username',text:'what should we call you' ,),
-                        SizedBox(height: ContainerSize.usernameSizedBoxCreateAccount,),
-                        RoundTextField(Controller: emailController,labelText: 'Email',text:'what\'s your email address?' ,),
-                        SizedBox(height: ContainerSize.usernameSizedBoxCreateAccount,),
-                        RoundTextField(Controller: passwordController,labelText: 'Password',text:'what\'s your secret key?' ,),
-                        SizedBox(height: ContainerSize.usernameSizedBoxCreateAccount,),
-                        RoundTextField(Controller: confirmPasswordController,labelText: 'Confirm password',text:'re-type your secret key' ,),
-                        SizedBox(height: ContainerSize.usernameMarginBottomCreateAccount,),
-                        RoundedMusicContainer(
-
-                          text: GestureDetector(
+                        text: GestureDetector(
                           onTap: (){
-                          _registration();
-
-                          },
-                          child: Container(
-                              margin: EdgeInsets.only(top: 15.h,left: 80.w),
-                              child: Text('Create an account',style: TextDimension.style18white)),
-                        ),
-                          width: ContainerSize.signInWidth, height: ContainerSize.signInHeight,img: 'images/purplebtn.png', onPressed: () {
                             _registration();
 
-                        },),
+                          },
+                          child: Center(child: Text('Create an account',style: TextDimension.style18white)),
+                        ),
+                        width: 283.w, height: 60.h,img: '', onPressed: () {
+                        _registration();
 
-                        Container(margin: EdgeInsets.only(left: 40.w),
-                          child: Text('Sign up with google',style: TextDimension.style14black,),
-                        )
-                      ],
-                    ),
+                      },),
+SizedBox(height: 20.h,),
+                      Container(margin: EdgeInsets.only(left: 40.w),
+                        child: Text('Sign up with google',style: TextDimension.style14black,),
+                      )
+                    ],
                   ),
-
-
                 ],
               ),
             ),
+            // Positioned(
+            //     top: 330.h,
+            //     child:
+            //
+            // ),
 
 
           ],
+            )
+            // Container(
+            //   color: Colors.red,
+            //   margin: EdgeInsets.only(
+            //       top: 60.h,left: 42.w, right: 42.w
+            //   ),
+            //   height: 50.h,
+            //   width: 400.w,
+            //
 
-        )
-    );
+
+        );
+
   }
 }

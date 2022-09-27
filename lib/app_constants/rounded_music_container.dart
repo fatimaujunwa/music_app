@@ -18,10 +18,12 @@ final Function() onPressed;
     return GestureDetector(
       onTap:onPressed,
       child: Container(
+
         margin: EdgeInsets.only(left: ContainerSize.signInMarginLeft,right: ContainerSize.signInMarginRight,),
 height: height,
         width: width,
         decoration: BoxDecoration(
+         color:   Color(0xff2d274e),
           borderRadius: BorderRadius.circular(50.r),
 
 image: DecorationImage(

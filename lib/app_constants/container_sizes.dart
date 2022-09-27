@@ -32,66 +32,66 @@ class ContainerSize{
 
   //same for password and email
   static final  usernameSizedBoxCreateAccount=32.0;
-  static final  usernameMarginLeftCreateAccount=46.0;
-  static final  usernameMarginRightCreateAccount=46.0;
-  static final  usernameMarginBottomCreateAccount=80.0;
+  static final  usernameMarginLeftCreateAccount=46.0.w;
+  static final  usernameMarginRightCreateAccount=46.0.w;
+  static final  usernameMarginBottomCreateAccount=80.0.h;
   //create an account on home screen
 //sign in screen container
-  static final signInScreenContainerWidth=283.0;
-  static final signInScreenContainerHeight=40.0;
-  static final signInScreenContainerMarginTop=403.0;
+  static final signInScreenContainerWidth=283.0.w;
+  static final signInScreenContainerHeight=40.0.h;
+  static final signInScreenContainerMarginTop=403.0.h;
 
 
   //create account home screen
-  static final createAccountHomeScreenWidth=306;
-  static final  createAccountHomeScreenHeight=60;
+  static final createAccountHomeScreenWidth=306.w;
+  static final  createAccountHomeScreenHeight=60.h;
 
   //create account same for sign in
-  static final createAccountWidth=283;
-  static final  createAccountHeight=60;
+  static final createAccountWidth=283.w;
+  static final  createAccountHeight=60.h;
 
 
   //now playing
-  static final nowPlayingHeight=287.14;
-  static final nowPlayingWidth=280;
+  static final nowPlayingHeight=287.14.h;
+  static final nowPlayingWidth=280.w;
 
   //homePageContainer
-  static final homePageContainerHeight=150;
-  static final homePageContainerWidth=150;
+  static final homePageContainerHeight=150.h;
+  static final homePageContainerWidth=150.w;
 
   //Albums container
-  static final albumContainerWidth=114.4;
-  static final albumContainerHeight=102.96;
+  static final albumContainerWidth=114.4.w;
+  static final albumContainerHeight=102.96.h;
 
   //Don't wake me up container
-  static final albumContainerDwmuWidth=364.07;
-  static final albumContainerDwmuHeight=56.81;
+  static final albumContainerDwmuWidth=364.07.w;
+  static final albumContainerDwmuHeight=56.81.h;
 
 
 //bottomNavContainer
-  static final bottomNavWidth=375;
-  static final bottomNavHeight=66.06;
+  static final bottomNavWidth=375.w;
+  static final bottomNavHeight=66.06.h;
 
 //searchTabContainer
-  static final searchTabWidth=320.28;
-  static final searchTabHeight=44.04;
+  static final searchTabWidth=320.28.w;
+  static final searchTabHeight=44.04.h;
 
   //accountContainer
-  static final accountContainerWidth=342;
-  static final accountContainerHeight=91;
+  static final accountContainerWidth=342.w;
+  static final accountContainerHeight=91.h;
 
 
   //changePasswordContainer, email,subscriptions
-  static final changePasswordContainerWidth=343;
-  static final changePasswordContainerHeight=74;
+  static final changePasswordContainerWidth=343.w;
+  static final changePasswordContainerHeight=74.h;
 
 //searchPlayList
-  static final searchPlayListWidth=253;
-  static final searchPlayListHeight=44;
+  static final searchPlayListWidth=253.w;
+  static final searchPlayListHeight=44.h;
 
 //notificationContainer
-  static final notificationContainerWidth=336;
-  static final notificationContainerHeight=50;
+  static final notificationContainerWidth=336.w;
+  static final notificationContainerHeight=50.h;
 
 
 

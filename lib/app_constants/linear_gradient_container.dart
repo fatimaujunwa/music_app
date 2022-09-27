@@ -51,7 +51,8 @@ required this.radius,
             width: width,
             decoration:BoxDecoration(
                 image: DecorationImage(
-                    image: NetworkImage(images),
+                  image: AssetImage(images),
+                    // image: NetworkImage(images),
                     fit: BoxFit.cover),
                 borderRadius: BorderRadius.circular(innerRadius)
             ) ,
