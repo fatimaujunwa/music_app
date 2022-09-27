@@ -10,11 +10,12 @@ import 'package:get/get_utils/src/get_utils/get_utils.dart';
 
 
 import '../app_constants/container_sizes.dart';
+import '../data/models/sign_up_body.dart';
 import '../widgets/custom_snack_bar.dart';
 import '../widgets/rounded_music_container.dart';
 import '../widgets/rounded_text_field.dart';
 import '../helpers/route_helper.dart';
-import '../models/sign_up_body.dart';
+
 import '../app_constants/textstyle.dart';
 import '../controllers/auth_controllers.dart';
 
