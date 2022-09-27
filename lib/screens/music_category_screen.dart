@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_music_app/app_constants/textstyle.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../app_constants/genre_container.dart';
+import '../widgets/genre_container.dart';
 
 class MusicCategoryScreen extends StatefulWidget {
   const MusicCategoryScreen({Key? key}) : super(key: key);

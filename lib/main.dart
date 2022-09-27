@@ -1,7 +1,7 @@
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_music_app/app_constants/genre_container.dart';
-import 'package:flutter_music_app/audio_file.dart';
+import 'package:flutter_music_app/widgets/genre_container.dart';
+import 'package:flutter_music_app/data/models/audio_file.dart';
 import 'package:flutter_music_app/controllers/album_controller.dart';
 import 'package:flutter_music_app/controllers/auth_controllers.dart';
 import 'package:flutter_music_app/screens/music_account_screen.dart';
@@ -27,11 +27,11 @@ import 'package:get/get_navigation/src/root/get_material_app.dart';
 // import 'package:get/get_navigation/src/root/get_material_app.dart';
 
 
-import 'app_constants/bottom_nav_bar.dart';
-import 'app_constants/round_image_container.dart';
-import 'app_constants/route_helper.dart';
+import 'widgets/bottom_nav_bar.dart';
+import 'widgets/round_image_container.dart';
+import 'helpers/route_helper.dart';
 import 'screens/music_sign_up_screen.dart';
-import 'dependencies.dart'as dep;
+import 'dependencies/dependencies.dart'as dep;
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await dep.init();
@@ -90,7 +90,7 @@ return ScreenUtilInit(builder: (context,_){
     debugShowCheckedModeBanner: false,
     title: 'Music App',
 
-    home:pages[10],
+    home:pages[11],
     // initialRoute: RouteHelper.musicHomeIcon,
     // getPages: RouteHelper.routes
     // body:pages[4],

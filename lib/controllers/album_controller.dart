@@ -1,8 +1,10 @@
-import 'package:flutter_music_app/models/album_model.dart';
+import 'package:flutter_music_app/data/models/album_model.dart';
 import 'package:flutter_music_app/repositories/album_repo.dart';
 import 'package:get/get.dart';
 
-import '../models/songs_model.dart';
+import '../data/models/songs_model.dart';
+
+
 
 
 

@@ -5,8 +5,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 
-import '../app_constants/rounded_music_container.dart';
-import '../app_constants/route_helper.dart';
+import '../widgets/rounded_music_container.dart';
+import '../helpers/route_helper.dart';
 import '../app_constants/textstyle.dart';
 
 

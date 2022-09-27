@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 
-import 'container_sizes.dart';
+import '../app_constants/container_sizes.dart';
 
 class RoundedMusicContainer extends StatelessWidget {
   final Widget text;

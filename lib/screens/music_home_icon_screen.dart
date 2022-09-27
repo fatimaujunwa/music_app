@@ -6,9 +6,9 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 
-import '../app_constants/bottom_nav_bar.dart';
-import '../app_constants/linear_gradient_container.dart';
-import '../app_constants/route_helper.dart';
+import '../widgets/bottom_nav_bar.dart';
+import '../widgets/linear_gradient_container.dart';
+import '../helpers/route_helper.dart';
 import '../app_constants/textstyle.dart';
 import '../app_constants/uri_elements.dart';
 import 'music_library_screen.dart';

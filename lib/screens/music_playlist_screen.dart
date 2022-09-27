@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../app_constants/round_image_container.dart';
+import '../widgets/round_image_container.dart';
 import '../app_constants/textstyle.dart';
 
 

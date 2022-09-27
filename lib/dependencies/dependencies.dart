@@ -6,9 +6,9 @@ import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_instance/src/extension_instance.dart';
 // import 'package:shared_preferences/shared_preferences.dart';
 
-import 'api_client.dart';
-import 'app_constants/uri_elements.dart';
-import 'controllers/auth_controllers.dart';
+import '../data/api_client.dart';
+import '../app_constants/uri_elements.dart';
+import '../controllers/auth_controllers.dart';
 
 Future<void>init(
     )async{
