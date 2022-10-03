@@ -1,6 +1,6 @@
-# Music App(Ongoing)
+# Music App UI
 
-Music App provides audio streaming of your favourite albums.
+User Interface of a Music Application
 
 
 ## Features
